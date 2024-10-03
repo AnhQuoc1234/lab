@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue-Master</title>
+    <!-- Import Styles -->
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+
+    <div class="nav-bar"></div>
+
+    <div id="app">
+      <div class="cart">
+        <p>Cart({{ cart.length }})</p>
+      </div>
+      
+      <product :premium="premium" @add-to-cart="updateCart"></product>
+      </div>
+      <product :premium="premium" @remove-product="removeProduct"></product>
+    </div>
+
+    </div>
+      </div>
+  
+      </div>
+    <!-- Import Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+    <!-- Import Js -->
+    <script src="main.js"></script>
+  </body>
+</html>
